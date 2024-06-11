@@ -1,11 +1,11 @@
 import java.util.Date;
 
-// Enum for Student Status
+
 enum Status {
     FRESHMAN, SOPHOMORE, JUNIOR, SENIOR;
 }
 
-// MyDate class
+
 class MyDate {
     int year, month, day;
 
@@ -21,7 +21,6 @@ class MyDate {
     }
 }
 
-// Person class
 class Person {
     private String name;
     private String address;
@@ -41,7 +40,7 @@ class Person {
     }
 }
 
-// Student class
+
 class Student extends Person {
     private Status status;
 
@@ -56,7 +55,7 @@ class Student extends Person {
     }
 }
 
-// Employee class
+
 class Employee extends Person {
     private String office;
     private double salary;
@@ -75,7 +74,7 @@ class Employee extends Person {
     }
 }
 
-// Faculty class
+
 class Faculty extends Employee {
     private String officeHours;
     private String rank;
@@ -92,7 +91,7 @@ class Faculty extends Employee {
     }
 }
 
-// Staff class
+
 class Staff extends Employee {
     private String title;
 
@@ -107,7 +106,7 @@ class Staff extends Employee {
     }
 }
 
-// FullTime class
+
 class FullTime extends Staff {
     public FullTime(String name, String address, String phoneNumber, String emailAddress, String office, double salary, MyDate dateHired, String title) {
         super(name, address, phoneNumber, emailAddress, office, salary, dateHired, title);
@@ -119,7 +118,6 @@ class FullTime extends Staff {
     }
 }
 
-// PartTime class
 class PartTime extends Staff {
     private double hourlyRate;
     private int hoursWorked;
@@ -140,7 +138,7 @@ class PartTime extends Staff {
     }
 }
 
-// Test program
+
 public class TestProgram {
     public static void main(String[] args) {
         MyDate dateHired = new MyDate(2020, 1, 1);
