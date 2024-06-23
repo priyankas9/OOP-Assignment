@@ -15,16 +15,8 @@ public class Cylinder extends Circle {
         return 2 * Math.PI * getRadius() * (getRadius() + height);
     }
 
-    private double getRadius() {
-        // Use reflection or change the radius to protected if needed
-        try {
-            java.lang.reflect.Field field = Circle.class.getDeclaredField("radius");
-            field.setAccessible(true);
-            return field.getDouble(this);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return 0;
+    public double getHeight() {
+        return height;
     }
 
     @Override
