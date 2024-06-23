@@ -13,7 +13,7 @@ public class GeometricObjectTest {
         // Test ComparableCylinder objects
         ComparableCylinder comparableCylinder1 = new ComparableCylinder(3, 5);
         ComparableCylinder comparableCylinder2 = new ComparableCylinder(4, 6);
-        System.out.println("Larger ComparableCylinder: " + (comparableCylinder1.compareTo(comparableCylinder2) > 0 ? comparableCylinder1 : comparableCylinder2));
+        System.out.println("Larger ComparableCylinder: " + (comparableCylinder1.compareVolume(comparableCylinder2) > 0 ? comparableCylinder1 : comparableCylinder2));
 
         // Test Colorable Square
         Square square = new Square(4);
@@ -21,4 +21,3 @@ public class GeometricObjectTest {
         square.howToColor();
     }
 }
- 
