@@ -1,10 +1,9 @@
-public class ComparableCylinder extends Cylinder implements Comparable<ComparableCylinder> {
+public class ComparableCylinder extends Cylinder {
     public ComparableCylinder(double radius, double height) {
         super(radius, height);
     }
 
-    @Override
-    public int compareTo(ComparableCylinder o) {
+    public int compareVolume(ComparableCylinder o) {
         return Double.compare(this.getVolume(), o.getVolume());
     }
 
