@@ -10,6 +10,10 @@ public class Circle extends GeometricObject {
         return Math.PI * radius * radius;
     }
 
+    public double getRadius() {
+        return radius;
+    }
+
     @Override
     public String toString() {
         return "Circle{radius=" + radius + ", area=" + getArea() + "}";
