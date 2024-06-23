@@ -21,3 +21,4 @@ public class GeometricObjectTest {
         square.howToColor();
     }
 }
+ 
