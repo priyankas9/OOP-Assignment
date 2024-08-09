@@ -8,7 +8,7 @@ public class Fan {
     private double radius;
     private String color;
 
-    // Constructor
+
     public Fan() {
         this.speed = SLOW; 
         this.on = false;   
