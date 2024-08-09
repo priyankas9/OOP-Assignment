@@ -13,6 +13,6 @@ public class Discount {
     }
 
     public static double getProductDiscountRate(String membershipType) {
-        return 0.1; // Flat 10% discount for all members on products
+        return 0.1; 
     }
 }
