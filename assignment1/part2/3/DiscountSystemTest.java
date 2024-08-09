@@ -2,7 +2,7 @@ import java.util.Date;
 
 public class DiscountSystemTest {
     public static void main(String[] args) {
-        // Create customers
+        
         Customer customer1 = new Customer("Alice");
         customer1.setMembershipType("Premium");
 
@@ -14,7 +14,7 @@ public class DiscountSystemTest {
 
         Customer customer4 = new Customer("Dave");
 
-        // Create visits
+        
         Visit visit1 = new Visit(customer1, new Date());
         visit1.setServiceExpense(100);
         visit1.setProductExpense(50);
@@ -31,7 +31,7 @@ public class DiscountSystemTest {
         visit4.setServiceExpense(100);
         visit4.setProductExpense(50);
 
-        // Print total expenses for each visit
+       
         System.out.println(visit1);
         System.out.println("Total expense for " + visit1.getCustomerName() + ": $" + visit1.getTotalExpense());
 
